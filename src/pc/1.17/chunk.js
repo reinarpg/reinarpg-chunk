@@ -1,5 +1,5 @@
 function loader (registry) {
-  const Block = require('prismarine-block')(registry)
+  const Block = require('reinarpg-block')(registry)
 
   return require('./ChunkColumn')(Block, registry)
 }

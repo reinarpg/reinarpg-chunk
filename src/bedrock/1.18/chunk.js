@@ -3,7 +3,7 @@ const ChunkColumn = require('./ChunkColumn')
 
 module.exports = (version) => {
   const registry = version.blockRegistry || version
-  const Block = require('prismarine-block')(registry)
+  const Block = require('reinarpg-block')(registry)
   const Biome = require('prismarine-biome')(registry)
   return class Chunk extends ChunkColumn {
     constructor (options) {

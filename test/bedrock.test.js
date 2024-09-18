@@ -4,14 +4,14 @@ const { join } = require('path')
 const versions = ['bedrock_1.16.220', 'bedrock_1.17.10', 'bedrock_1.18.0', 'bedrock_1.19.1']
 const assert = require('assert')
 
-const { BlobEntry, BlobType } = require('prismarine-chunk')
+const { BlobEntry, BlobType } = require('reinarpg-chunk')
 
 const BlobStore = Map
 const blobStore = new BlobStore()
 
 for (const version of versions) {
   const registry = require('prismarine-registry')(version)
-  const ChunkColumn = require('prismarine-chunk')(registry)
+  const ChunkColumn = require('reinarpg-chunk')(registry)
 
   describe('bedrock network chunks on ' + version, () => {
     const fixtures = fs.readdirSync(join(__dirname, version))
@@ -177,7 +177,7 @@ describe('special bedrock tests', () => {
   // Test for some special cases that are not covered by the normal tests
   it('can load v1 subchunks in level_chunk', async () => {
     // SubChunk v1 is only sent by 3rd party servers
-    const ChunkColumn = require('prismarine-chunk')('bedrock_1.17.10')
+    const ChunkColumn = require('reinarpg-chunk')('bedrock_1.17.10')
     const packet = require('./bedrock_1.17.10/subchunkv1.json').params
     const column = new ChunkColumn({ x: packet.x, z: packet.z })
     const payload = Buffer.from(packet.payload)

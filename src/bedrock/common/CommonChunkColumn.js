@@ -139,7 +139,7 @@ class CommonChunkColumn {
     delete this.blockEntities[keyFromLocalPos(pos)]
   }
 
-  // This is only capable of moving block entities within the same chunk ... prismarine-world should implement this
+  // This is only capable of moving block entities within the same chunk ... reinarpg-world should implement this
   moveBlockEntity (pos, newPos) {
     const oldKey = keyFromLocalPos(pos)
     const newKey = keyFromLocalPos(newPos)

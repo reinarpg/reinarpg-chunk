@@ -8,8 +8,8 @@ const expect = require('expect').default
 
 for (const version of allVersions) {
   const registry = require('prismarine-registry')(version)
-  const Block = require('prismarine-block')(registry)
-  const ChunkColumn = require('prismarine-chunk')(registry)
+  const Block = require('reinarpg-block')(registry)
+  const ChunkColumn = require('reinarpg-chunk')(registry)
 
   // TODO: fix 2 bugs: node-mc-data feature checks fail on bedrock 0.14, is missing some functions and bedrock v1.0 chunk impl fails here
   // let chunkHeight
