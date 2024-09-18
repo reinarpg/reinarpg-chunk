@@ -10,7 +10,7 @@ const BlobStore = Map
 const blobStore = new BlobStore()
 
 for (const version of versions) {
-  const registry = require('prismarine-registry')(version)
+  const registry = require('reinarpg-registry')(version)
   const ChunkColumn = require('reinarpg-chunk')(registry)
 
   describe('bedrock network chunks on ' + version, () => {

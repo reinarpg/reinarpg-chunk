@@ -2,7 +2,7 @@ import { Biome } from "reinarpg-biome"
 import { Block } from "reinarpg-block"
 import { Vec3 } from "vec3"
 import { NBT } from "reinarpg-nbt"
-import { Registry } from 'prismarine-registry'
+import { Registry } from 'reinarpg-registry'
 import Section from "./section"
 
 declare class CommonChunk {

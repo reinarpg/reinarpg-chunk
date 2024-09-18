@@ -30,7 +30,7 @@
 
 ## 1.29.0
 
-* Implement prismarine-registry, basic block entities and 1.18 disk loading
+* Implement reinarpg-registry, basic block entities and 1.18 disk loading
 
 ## 1.28.1
 

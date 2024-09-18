@@ -33,7 +33,7 @@ module.exports.BlobEntry = blobCache.BlobEntry
 module.exports.BlobType = blobCache.BlobType
 
 function loader (registryOrVersion) {
-  const registry = typeof registryOrVersion === 'string' ? require('prismarine-registry')(registryOrVersion) : registryOrVersion
+  const registry = typeof registryOrVersion === 'string' ? require('reinarpg-registry')(registryOrVersion) : registryOrVersion
   const version = registry.version
   if (!version) throw new Error('Specified version does not exist')
   try {

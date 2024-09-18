@@ -7,7 +7,7 @@ const assert = require('assert')
 const expect = require('expect').default
 
 for (const version of allVersions) {
-  const registry = require('prismarine-registry')(version)
+  const registry = require('reinarpg-registry')(version)
   const Block = require('reinarpg-block')(registry)
   const ChunkColumn = require('reinarpg-chunk')(registry)
 

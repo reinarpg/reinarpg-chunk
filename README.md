@@ -13,7 +13,7 @@ A class to hold chunk data for Minecraft: PC 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1
 ## Usage
 
 ```js
-const registry = require('prismarine-registry')('1.8')
+const registry = require('reinarpg-registry')('1.8')
 const ChunkColumn = require('reinarpg-chunk')(registry)
 const { Vec3 } = require("vec3")
 

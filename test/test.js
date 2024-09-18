@@ -13,7 +13,7 @@ const { pcVersions, pcCycleTests } = require('./versions')
 const expect = require('expect').default
 
 pcVersions.forEach((version) => describe(`Chunk implementation for minecraft ${version}`, () => {
-  const registry = require('prismarine-registry')(version)
+  const registry = require('reinarpg-registry')(version)
   const Chunk = chunkLoader(registry)
   const Block = prismarineBlockLoader(registry)
 

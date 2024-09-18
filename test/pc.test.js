@@ -4,7 +4,7 @@ const assert = require('assert')
 const { pcVersions } = require('./versions')
 
 for (const version of pcVersions) {
-  const registry = require('prismarine-registry')(version)
+  const registry = require('reinarpg-registry')(version)
   if (!registry.supportFeature('usesPalettedChunks')) {
     continue
   }
