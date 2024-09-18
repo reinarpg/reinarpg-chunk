@@ -1,6 +1,6 @@
 const { Vec3 } = require('vec3')
 const Stream = require('../common/Stream')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 
 const keyFromLocalPos = pos => `${pos.x},${pos.y},${pos.z}`
 const keyFromGlobalPos = (x, y, z) => `${x & 0xf},${y},${z & 0xf}`

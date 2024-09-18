@@ -4,7 +4,7 @@ const BiomeSection = require('../1.18/BiomeSection')
 const { StorageType } = require('../common/constants')
 const Stream = require('../common/Stream')
 const { BlobType, BlobEntry } = require('../common/BlobCache')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 const { getChecksum } = require('../common/util')
 
 class ChunkColumn13 extends CommonChunkColumn {

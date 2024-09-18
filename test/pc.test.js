@@ -8,7 +8,7 @@ for (const version of pcVersions) {
   if (!registry.supportFeature('usesPalettedChunks')) {
     continue
   }
-  if (version === 'bedrock_0.14') continue // todo: remove after https://github.com/PrismarineJS/minecraft-data/pull/769
+  if (version === 'bedrock_0.14') continue // todo: remove after https://github.com/PrismarineJS/reinarpg-data/pull/769
 
   describe('pc section tests ' + version, () => {
     const ChunkColumn = require('reinarpg-chunk')(registry)

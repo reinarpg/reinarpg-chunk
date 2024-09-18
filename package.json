@@ -43,9 +43,9 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "prismarine-biome": "^1.2.0",
-    "reinarpg-block": "^1.14.1",
-    "prismarine-nbt": "^2.2.1",
+    "reinarpg-biome": "github:reinarpg/reinarpg-biome",
+    "reinarpg-block": "github:reinarpg/reinarpg-block",
+    "reinarpg-nbt": "github:reinarpg/reinarpg-nbt",
     "prismarine-registry": "^1.1.0",
     "smart-buffer": "^4.1.0",
     "uint4": "^0.1.2",

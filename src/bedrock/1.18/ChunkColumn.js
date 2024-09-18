@@ -7,7 +7,7 @@ const { BlobType, BlobEntry } = require('../common/BlobCache')
 const { StorageType } = require('../common/constants')
 const Stream = require('../common/Stream')
 
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 
 class ChunkColumn180 extends ChunkColumn13 {
   Section = SubChunk

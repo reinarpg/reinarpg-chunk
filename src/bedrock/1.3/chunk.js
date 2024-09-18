@@ -5,7 +5,7 @@ module.exports = (version) => {
   // Require once here to avoid requiring() on every new chunk instance
   const registry = version.blockRegistry || version
   const Block = require('reinarpg-block')(registry)
-  const Biome = require('prismarine-biome')(registry)
+  const Biome = require('reinarpg-biome')(registry)
   return class Chunk extends ChunkColumn {
     constructor (options) {
       super(options, registry, Block, Biome)

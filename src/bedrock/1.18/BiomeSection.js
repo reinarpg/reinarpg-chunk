@@ -4,7 +4,7 @@ const neededBits = require('../../pc/common/neededBits')
 
 class BiomeSection {
   constructor (registry, y, options = {}) {
-    this.Biome = require('prismarine-biome')(registry)
+    this.Biome = require('reinarpg-biome')(registry)
     this.y = y
     this.biomes = options.biomes ? PalettedStorage.copyFrom(options.biomes) : new PalettedStorage(1)
     this.palette = options.palette || [0]

@@ -3,7 +3,7 @@ const { StorageType } = require('../common/constants')
 const { getChecksum } = require('../common/util')
 const neededBits = require('../../pc/common/neededBits')
 const Stream = require('../common/Stream')
-const nbt = require('prismarine-nbt')
+const nbt = require('reinarpg-nbt')
 
 class SubChunk {
   constructor (registry, Block, options = {}) {
