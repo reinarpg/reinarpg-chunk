@@ -8,7 +8,7 @@ const { w, l, sh } = Section
 const sectionCount = h >> 4
 
 module.exports = (registry) => {
-  const Block = require('prismarine-block')(registry)
+  const Block = require('reinarpg-block')(registry)
 
   return class Chunk extends CommonChunkColumn {
     static get section () { return Section }

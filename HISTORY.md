@@ -1,9 +1,9 @@
 ## History
 
 ### 1.35.0
-* [Fix direct palettes (#232)](https://github.com/PrismarineJS/prismarine-chunk/commit/6422abc93ac121f635a03ffa339feb6e5b7b37bf) (thanks @frej4189)
-* [Fixes issue https://github.com/PrismarineJS/prismarine-chunk/issues/229 (#231)](https://github.com/PrismarineJS/prismarine-chunk/commit/bed78672ba07cb6d82ee66d148f8ce0ae1ce83c2) (thanks @Flonja)
-* [Add command gh workflow allowing to use release command in comments (#228)](https://github.com/PrismarineJS/prismarine-chunk/commit/0ac8714df114707d8f9c1d92fc0a7b5dcfcce619) (thanks @rom1504)
+* [Fix direct palettes (#232)](https://github.com/PrismarineJS/reinarpg-chunk/commit/6422abc93ac121f635a03ffa339feb6e5b7b37bf) (thanks @frej4189)
+* [Fixes issue https://github.com/PrismarineJS/reinarpg-chunk/issues/229 (#231)](https://github.com/PrismarineJS/reinarpg-chunk/commit/bed78672ba07cb6d82ee66d148f8ce0ae1ce83c2) (thanks @Flonja)
+* [Add command gh workflow allowing to use release command in comments (#228)](https://github.com/PrismarineJS/reinarpg-chunk/commit/0ac8714df114707d8f9c1d92fc0a7b5dcfcce619) (thanks @rom1504)
 
 ## 1.34.0
 
@@ -230,7 +230,7 @@
 
  * use vec3
  * add an example + doc
- * use prismarine-block
+ * use reinarpg-block
 
 ### 0.1.0
 

@@ -18,7 +18,7 @@ const writeUInt4LE = require('uint4').writeUInt4LE
 module.exports = loader
 
 function loader (registry) {
-  Block = require('prismarine-block')(registry)
+  Block = require('reinarpg-block')(registry)
   Chunk.w = w
   Chunk.l = l
   Chunk.h = h

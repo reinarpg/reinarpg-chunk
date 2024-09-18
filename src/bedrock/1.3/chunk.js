@@ -4,7 +4,7 @@ const ChunkColumn = require('./ChunkColumn')
 module.exports = (version) => {
   // Require once here to avoid requiring() on every new chunk instance
   const registry = version.blockRegistry || version
-  const Block = require('prismarine-block')(registry)
+  const Block = require('reinarpg-block')(registry)
   const Biome = require('prismarine-biome')(registry)
   return class Chunk extends ChunkColumn {
     constructor (options) {

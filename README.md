@@ -1,12 +1,12 @@
-# prismarine-chunk
+# reinarpg-chunk
 
-[![NPM version](https://img.shields.io/npm/v/prismarine-chunk.svg)](http://npmjs.com/package/prismarine-chunk)
-[![Build Status](https://github.com/PrismarineJS/prismarine-chunk/workflows/CI/badge.svg)](https://github.com/PrismarineJS/prismarine-chunk/actions?query=workflow%3A%22CI%22)
+[![NPM version](https://img.shields.io/npm/v/reinarpg-chunk.svg)](http://npmjs.com/package/reinarpg-chunk)
+[![Build Status](https://github.com/PrismarineJS/reinarpg-chunk/workflows/CI/badge.svg)](https://github.com/PrismarineJS/reinarpg-chunk/actions?query=workflow%3A%22CI%22)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-brightgreen.svg)](https://discord.gg/GsEFRM8)
 [![Gitter](https://img.shields.io/badge/chat-on%20gitter-brightgreen.svg)](https://gitter.im/PrismarineJS/general)
 [![Irc](https://img.shields.io/badge/chat-on%20irc-brightgreen.svg)](https://irc.gitter.im/)
 
-[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/prismarine-chunk)
+[![Try it on gitpod](https://img.shields.io/badge/try-on%20gitpod-brightgreen.svg)](https://gitpod.io/#https://github.com/PrismarineJS/reinarpg-chunk)
 
 A class to hold chunk data for Minecraft: PC 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15 and 1.16 and Bedrock Edition 0.14 and 1.0, 1.16, 1.17, 1.18, 1.19 and 1.20
 
@@ -14,7 +14,7 @@ A class to hold chunk data for Minecraft: PC 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1
 
 ```js
 const registry = require('prismarine-registry')('1.8')
-const ChunkColumn = require('prismarine-chunk')(registry)
+const ChunkColumn = require('reinarpg-chunk')(registry)
 const { Vec3 } = require("vec3")
 
 const chunk = new ChunkColumn()
@@ -47,7 +47,7 @@ Run tests in [bedrock-provider](https://github.com/PrismarineJS/bedrock-provider
 
 For the version, copy one chunk column of `level_chunk` without caching, `level_chunk` with caching, `level_chunk CacheMissResponse`, `subchunk` without caching, `subchunk cached` and `subchunk CacheMissResponse` into the test/version folder.
 
-Note: bedrock-provider tests network decoding and loading chunks from a save database. The tests in prismarine-chunk test other parts of the chunk API, such as
+Note: bedrock-provider tests network decoding and loading chunks from a save database. The tests in reinarpg-chunk test other parts of the chunk API, such as
 setting and getting block light, type, biome, entity and block entity data.
 
 # API
@@ -61,7 +61,7 @@ Build a new chunk. initData is only for 1.18+, and if not given or null the worl
 #### Chunk.initialize(iniFunc)
 
 Initialize a chunk.
-* `iniFunc` is a function(x,y,z) returning a prismarine-block.
+* `iniFunc` is a function(x,y,z) returning a reinarpg-block.
 
 That function is faster than iterating and calling the setBlock* manually. It is useful to generate a whole chunk and load a whole chunk.
 
@@ -75,13 +75,13 @@ returns ChunkSection class for version
 
 #### Chunk.getBlock(pos)
 
-Get the [Block](https://github.com/PrismarineJS/prismarine-block) at [pos](https://github.com/andrewrk/node-vec3)
+Get the [Block](https://github.com/PrismarineJS/reinarpg-block) at [pos](https://github.com/andrewrk/node-vec3)
 
 `.entity` will have entity NBT data for this block, if it exists
 
 #### Chunk.setBlock(pos,block)
 
-Set the [Block](https://github.com/PrismarineJS/prismarine-block) at [pos](https://github.com/andrewrk/node-vec3)
+Set the [Block](https://github.com/PrismarineJS/reinarpg-block) at [pos](https://github.com/andrewrk/node-vec3)
 
 Set `.entity` property with NBT data for this block to load block entity data for the block
 
@@ -205,7 +205,7 @@ Load biomes into the chunk (starting from 1.15)
 
 ### bedrock
 
-See [index.d.ts](https://github.com/PrismarineJS/prismarine-chunk/blob/master/types/index.d.ts#L56)
+See [index.d.ts](https://github.com/PrismarineJS/reinarpg-chunk/blob/master/types/index.d.ts#L56)
 
 ## ChunkSection
 
@@ -234,7 +234,7 @@ See [index.d.ts](https://github.com/PrismarineJS/prismarine-chunk/blob/master/ty
 
 ### bedrock
 
-See [index.d.ts](https://github.com/PrismarineJS/prismarine-chunk/blob/master/types/index.d.ts#L56)
+See [index.d.ts](https://github.com/PrismarineJS/reinarpg-chunk/blob/master/types/index.d.ts#L56)
 
 #### compact()
 Shrinks the size of the SubChunk if possible after setBlock operations are done

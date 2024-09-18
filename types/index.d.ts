@@ -1,5 +1,5 @@
 import { Biome } from "prismarine-biome"
-import { Block } from "prismarine-block"
+import { Block } from "reinarpg-block"
 import { Vec3 } from "vec3"
 import { NBT } from "prismarine-nbt"
 import { Registry } from 'prismarine-registry'
